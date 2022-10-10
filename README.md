@@ -1,10 +1,34 @@
-# Getting Started with Create React App
+# Exercise Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a modified version of the source code from [this project](https://github.com/beaucarnes/mern-exercise-tracker-mongodb).\
+Modifications were made to update CommonJS to ES Modules and use v6\
+of `react-router-dom`. Feature changes were not made.
 
-## Available Scripts
+## Environment Setup
 
-In the project directory, you can run:
+You will first need to set up a MongoDB Atlas account, create a\ project, and run a cluster.
+
+After cloning the repository and installing necessary dependencies,\
+you will need to create a `.env` file in the `backend` directory\ containing the following:
+
+```
+ATLAS_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.sfutwvh.mongodb.net/?retryWrites=true&w=majority
+```
+
+where `USERNAME` and `PASSWORD` correspond to your MongoDB Cloud\ Database Users (not the username and password to the account itself,\ per se). Optionally, add a value for `PORT` if you would rather not\ the default (5000).
+
+## Backend Script
+
+In the `backend` directory, you can run:
+
+### `npm start`
+
+Starts the server at [http://localhost:5000](http://localhost:5000)\ (assuming you didn't specify a different port number) with nodemon\
+and establishes a connection with the MongoDB database.
+
+## Frontend Scripts
+
+In the project or `src` directory, you can run:
 
 ### `npm start`
 
@@ -28,43 +52,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
