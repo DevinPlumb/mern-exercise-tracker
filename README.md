@@ -6,16 +6,20 @@ of `react-router-dom`. Feature changes were not made.
 
 ## Environment Setup
 
-You will first need to set up a MongoDB Atlas account, create a\ project, and run a cluster.
+You will first need to set up a MongoDB Atlas account, create a\
+project, and run a cluster.
 
 After cloning the repository and installing necessary dependencies,\
-you will need to create a `.env` file in the `backend` directory\ containing the following:
+you will need to create a `.env` file in the `backend` directory\
+containing the following:
 
 ```
 ATLAS_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.sfutwvh.mongodb.net/?retryWrites=true&w=majority
 ```
 
-where `USERNAME` and `PASSWORD` correspond to your MongoDB Cloud\ Database Users (not the username and password to the account itself,\ per se). Optionally, add a value for `PORT` if you would rather not\ the default (5000).
+where `USERNAME` and `PASSWORD` correspond to your MongoDB Cloud\
+Database Users (not the username and password to the account itself,\ per se). Optionally, add a value for `PORT` if you would rather not\
+the default (5000).
 
 ## Backend Script
 
@@ -23,7 +27,8 @@ In the `backend` directory, you can run:
 
 ### `npm start`
 
-Starts the server at [http://localhost:5000](http://localhost:5000)\ (assuming you didn't specify a different port number) with nodemon\
+Starts the server at [http://localhost:5000](http://localhost:5000)\
+(assuming you didn't specify a different port number) with nodemon\
 and establishes a connection with the MongoDB database.
 
 ## Frontend Scripts
