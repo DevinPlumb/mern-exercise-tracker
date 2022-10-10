@@ -18,7 +18,8 @@ ATLAS_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.sfutwvh.mongodb.net/?retryWri
 ```
 
 where `USERNAME` and `PASSWORD` correspond to your MongoDB Cloud\
-Database Users (not the username and password to the account itself,\ per se). Optionally, add a value for `PORT` if you would rather not\
+Database Users (not the username and password to the account itself,\
+per se). Optionally, add a value for `PORT` if you would rather not\
 the default (5000).
 
 ## Backend Script
